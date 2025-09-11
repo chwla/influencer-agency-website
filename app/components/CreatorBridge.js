@@ -45,8 +45,8 @@ const ConvogueSections = () => {
                 <span className="animate-bounce inline-block ml-2">?</span>
               </h1>
               
-              <p className="text-xl text-gray-300 leading-relaxed animate-fade-in-delay-1">
-                We're not just an agency – we're the bridge between brands and 
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-delay-1">
+                We&apos;re not just an agency – we&apos;re the bridge between brands and 
                 the creator economy. At our core, we connect brands with the right creators and conversations. We specialize in organizing influencer-led events, managing brand campaigns, and executing strategic digital marketing across platforms like Instagram, YouTube, and Twitter.
               </p>
               
@@ -86,7 +86,7 @@ const ConvogueSections = () => {
               {
                 icon: Globe,
                 title: 'Multi-Platform Expertise',
-                desc: 'Native understanding of each platform\'s unique audience and culture',
+                desc: 'Native understanding of each platform&apos;s unique audience and culture',
                 color: 'from-emerald-400 to-cyan-500'
               },
               {

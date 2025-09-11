@@ -99,11 +99,11 @@ export default function ContactUs() {
           {/* Header Section */}
           <div className="text-center mb-16 animate-fade-in-up">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-teal-200 to-teal-400 bg-clip-text text-transparent">
-              Let's Create Something
+              Let&apos;s Create Something
               <span className="block text-teal-400">Amazing Together</span>
             </h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              Ready to transform your brand presence in the creator economy? Share your vision with us and let's craft a campaign that resonates with your audience.
+              Ready to transform your brand presence in the creator economy? Share your vision with us and let&apos;s craft a campaign that resonates with your audience.
             </p>
           </div>
 
@@ -122,7 +122,7 @@ export default function ContactUs() {
                     </svg>
                   </div>
                   <h2 className="text-3xl font-bold text-white mb-4">Thank You!</h2>
-                  <p className="text-gray-400 text-lg">We've received your inquiry and will get back to you within 24 hours.</p>
+                  <p className="text-gray-400 text-lg">We&apos;ve received your inquiry and will get back to you within 24 hours.</p>
                 </div>
               ) : (
                 <div ref={formRef} className="space-y-8">
@@ -253,14 +253,14 @@ export default function ContactUs() {
                       >
                         <option value="">Select Industry</option>
                         <option value="technology">Technology</option>
-                        <option value="fashion">Fashion & Lifestyle</option>
-                        <option value="beauty">Beauty & Cosmetics</option>
-                        <option value="food">Food & Beverage</option>
-                        <option value="fitness">Health & Fitness</option>
-                        <option value="travel">Travel & Tourism</option>
-                        <option value="finance">Finance & Banking</option>
+                        <option value="fashion">Fashion &amp; Lifestyle</option>
+                        <option value="beauty">Beauty &amp; Cosmetics</option>
+                        <option value="food">Food &amp; Beverage</option>
+                        <option value="fitness">Health &amp; Fitness</option>
+                        <option value="travel">Travel &amp; Tourism</option>
+                        <option value="finance">Finance &amp; Banking</option>
                         <option value="education">Education</option>
-                        <option value="gaming">Gaming & Entertainment</option>
+                        <option value="gaming">Gaming &amp; Entertainment</option>
                         <option value="other">Other</option>
                       </select>
                       <ValidationError 

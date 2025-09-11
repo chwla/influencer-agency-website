@@ -74,7 +74,7 @@ export default function About() {
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto mb-8 rounded-full animate-pulse"></div>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-delay-1">
-              At Convogue, we're on a mission to simplify and elevate the way brands and creators collaborate. 
+              At Convogue, we&apos;re on a mission to simplify and elevate the way brands and creators collaborate. 
               Our team combines deep knowledge of influencer marketing, hands-on industry experience, and strong 
               technical expertise to build a platform that makes authentic partnerships effortless.
             </p>
@@ -129,7 +129,7 @@ export default function About() {
                 <p className="text-emerald-300 mb-4 font-medium group-hover:text-emerald-200 transition-colors duration-300">Co-Founder & CTO</p>
                 <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
                   Currently studying at Birla Institute of Technology & Science (BITS) Pilani, Soham is the 
-                  technical mind behind Convogue. He is building the platform's architecture and product roadmap 
+                  technical mind behind Convogue. He is building the platform&apos;s architecture and product roadmap 
                   to ensure a smooth, scalable, and intuitive user experience for both brands and influencers.
                 </p>
               </div>
