@@ -104,7 +104,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center text-gray-400 hover:text-teal-400 transition-colors duration-300">
                 <Mail size={18} className="mr-3 text-teal-400" />
-                <a href="mailto:hello@convogue.in" className="hover:underline">
+                <a href="mailto:team@convogue.in?subject=Inquiry%20from%20Convogue%20Website&body=Hi%20Convogue%20Team," className="hover:underline">
                   team@convogue.in
                 </a>
               </div>
