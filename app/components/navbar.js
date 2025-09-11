@@ -42,7 +42,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Link 
-              href="/get-started"
+              href="https://calendly.com/team-convogue-dem_/new-meeting"
               className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-2 rounded-full text-base font-semibold transition-all duration-200 transform hover:scale-105"
             >
               Book a Call
