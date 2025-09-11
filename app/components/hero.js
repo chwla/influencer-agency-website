@@ -10,6 +10,7 @@ import {
   FaShopify, 
   FaAmazon 
 } from 'react-icons/fa';
+import { useRouter } from 'next/navigation';
 
 const FloatingIcon = ({ Icon, className, animationDelay }) => (
   <div 
@@ -28,6 +29,7 @@ const FloatingIcon = ({ Icon, className, animationDelay }) => (
 );
 
 const Hero = () => {
+  const router = useRouter();
   const floatingIcons = [
     { Icon: FaFacebook, className: 'top-20 left-20', delay: 0 },
     { Icon: FaInstagram, className: 'top-32 left-40', delay: 1 },
@@ -90,7 +92,7 @@ const Hero = () => {
           {/* Single Centered CTA Button */}
           <div className="flex items-center justify-center">
             <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25"
-              onClick={'/contact'}
+              onClick={() => router.push("/contact")}
             >
               Start Your Campaign
             </button>
