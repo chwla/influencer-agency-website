@@ -17,9 +17,9 @@ export const metadata = {
   title: "Convogue – Influencer Marketing Agency",
   description: "Connecting Indian brands with influencers across Instagram, YouTube, and more.",
   icons: {
-    icon: "/favicon.ico", //standard
-    shortcut: "/favicon.png", //fallback
-    apple: "/apple-touch-icon.png", //IOS home screen
+    icon: "/favicon-v3.png", //standard
+    shortcut: "/favicon-v3.png", //fallback
+    apple: "/favicon-v3.png", //IOS home screen
   },
 };
 
