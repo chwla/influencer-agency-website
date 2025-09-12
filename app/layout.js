@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Convogue – Influencer Marketing Agency",
   description: "Connecting Indian brands with influencers across Instagram, YouTube, and more.",
+  icons: {
+    icon: "/favicon.ico", //standard
+    shortcut: "/favicon.png", //fallback
+    apple: "/apple-touch-icon.png", //IOS home screen
+  },
 };
 
 export default function RootLayout({ children }) {
