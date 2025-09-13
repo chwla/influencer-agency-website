@@ -42,7 +42,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 overflow-hidden">
       {/* CSS Animation Styles */}
       <style dangerouslySetInnerHTML={{
         __html: `
@@ -74,7 +74,7 @@ const Hero = () => {
       ))}
 
       {/* Hero Content */}
-      <div className="relative z-10 flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 flex items-center justify-center min-h-[calc(100vh-80px)] px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
