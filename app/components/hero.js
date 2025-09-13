@@ -73,17 +73,15 @@ const Hero = () => {
              backgroundSize: '30px 30px'
            }} />
       
-      {/* Floating Icons - Hidden on very small screens */}
-      <div className="hidden sm:block">
-        {floatingIcons.map((icon, index) => (
-          <FloatingIcon
-            key={index}
-            Icon={icon.Icon}
-            className={icon.className}
-            animationDelay={icon.delay}
-          />
-        ))}
-      </div>
+      {/* Floating Icons */}
+      {floatingIcons.map((icon, index) => (
+        <FloatingIcon
+          key={index}
+          Icon={icon.Icon}
+          className={icon.className}
+          animationDelay={icon.delay}
+        />
+      ))}
 
       {/* Hero Content */}
       <div className="relative z-10 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 md:py-12 lg:py-16"
