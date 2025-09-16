@@ -63,7 +63,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative bg-gray-950 border-t border-gray-800 overflow-hidden">
+    <footer className="relative bg-gray-100 dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-r from-teal-500/10 to-green-500/10 rounded-full blur-xl animate-pulse"></div>
@@ -92,23 +92,23 @@ export default function Footer() {
           <div className="space-y-6">
             <div>
               <div className="text-3xl font-bold mb-4">
-                <span className="text-white">Con</span>
+                <span className="text-gray-900 dark:text-white">Con</span>
                 <span className="text-teal-400">vogue</span>
               </div>
-              <p className="text-gray-400 leading-relaxed mb-6">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
                 Bridging brands and creators in the digital ecosystem. We specialize in authentic partnerships that drive real results and meaningful connections.
               </p>
             </div>
             
             {/* Contact Info */}
             <div className="space-y-3">
-              <div className="flex items-center text-gray-400 hover:text-teal-400 transition-colors duration-300">
+              <div className="flex items-center text-gray-600 dark:text-gray-400 hover:text-teal-400 transition-colors duration-300">
                 <Mail size={18} className="mr-3 text-teal-400" />
                 <a href="mailto:team@convogue.in?subject=Inquiry%20from%20Convogue%20Website&body=Hi%20Convogue%20Team," className="hover:underline">
                   team@convogue.in
                 </a>
               </div>
-              <div className="flex items-start text-gray-400">
+              <div className="flex items-start text-gray-600 dark:text-gray-400">
                 <MapPin size={18} className="mr-3 text-teal-400 mt-1" />
                 <span>New Delhi, India</span>
               </div>
@@ -117,14 +117,14 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-6 relative">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6 relative">
               Our Services
               <div className="absolute bottom-0 left-0 w-12 h-0.5 bg-gradient-to-r from-teal-400 to-green-400 rounded-full"></div>
             </h3>
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
-                  <span className="text-gray-400 transition-colors duration-300">
+                  <span className="text-gray-600 dark:text-gray-400 transition-colors duration-300">
                     {service}
                   </span>
                 </li>
@@ -134,7 +134,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-6 relative">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6 relative">
               Quick Links
               <div className="absolute bottom-0 left-0 w-12 h-0.5 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full"></div>
             </h3>
@@ -143,7 +143,7 @@ export default function Footer() {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-gray-400 hover:text-purple-400 transition-all duration-300 hover:translate-x-2 inline-block"
+                    className="text-gray-600 dark:text-gray-400 hover:text-purple-400 transition-all duration-300 hover:translate-x-2 inline-block"
                   >
                     {link.text}
                   </a>
@@ -154,18 +154,18 @@ export default function Footer() {
         </div>
 
         {/* Social Links & Bottom Bar */}
-        <div className="pt-8 border-t border-gray-800">
+        <div className="pt-8 border-t border-gray-200 dark:border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
             {/* Social Links */}
             <div className="flex items-center space-x-6">
-              <span className="text-gray-400 font-medium">Follow us:</span>
+              <span className="text-gray-600 dark:text-gray-400 font-medium">Follow us:</span>
               <div className="flex space-x-4">
                 {socialLinks.map(({ Icon, href, color, label }, index) => (
                   <a
                     key={index}
                     href={href}
                     aria-label={label}
-                    className={`w-10 h-10 bg-gray-800/50 rounded-full flex items-center justify-center text-gray-400 ${color} transition-all duration-300 hover:scale-110 hover:bg-gray-700/50 hover:shadow-lg backdrop-blur-sm border border-gray-700/50`}
+                    className={`w-10 h-10 bg-white/50 dark:bg-gray-800/50 rounded-full flex items-center justify-center text-gray-600 dark:text-gray-400 ${color} transition-all duration-300 hover:scale-110 hover:bg-gray-100 dark:hover:bg-gray-700/50 hover:shadow-lg backdrop-blur-sm border border-gray-300 dark:border-gray-700/50`}
                   >
                     <Icon size={18} />
                   </a>
@@ -175,7 +175,7 @@ export default function Footer() {
 
             {/* Copyright */}
             <div className="flex items-center space-x-6">
-              <p className="text-gray-400 text-center md:text-left">
+              <p className="text-gray-600 dark:text-gray-400 text-center md:text-left">
                 © {currentYear} Convogue. All rights reserved.
               </p>
               
