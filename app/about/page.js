@@ -22,7 +22,7 @@ export default function About() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden relative">
+    <div className="min-h-screen bg-gray-50 dark:bg-black text-gray-900 dark:text-white overflow-hidden relative">
       {/* Animated Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         {/* Floating orbs */}
@@ -73,7 +73,7 @@ export default function About() {
               </span>
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto mb-8 rounded-full animate-pulse"></div>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-delay-1">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-delay-1">
               At Convogue, we&apos;re on a mission to simplify and elevate the way brands and creators collaborate. 
               Our team combines deep knowledge of influencer marketing, hands-on industry experience, and strong 
               technical expertise to build a platform that makes authentic partnerships effortless.
@@ -97,7 +97,7 @@ export default function About() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Raghav Goyal */}
-            <div className="bg-gray-800/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-700/50 hover:border-emerald-500/50 transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden animate-fade-in-up">
+            <div className="bg-white/80 dark:bg-gray-800/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 dark:border-gray-700/50 hover:border-gray-300 dark:hover:border-emerald-500/50 transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden animate-fade-in-up">
               {/* Animated background gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-transparent to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
@@ -107,7 +107,7 @@ export default function About() {
                 </div>
                 <h3 className="text-2xl font-bold text-emerald-400 mb-2 group-hover:text-emerald-300 transition-colors duration-300">Raghav Goyal</h3>
                 <p className="text-emerald-300 mb-4 font-medium group-hover:text-emerald-200 transition-colors duration-300">Co-Founder & CEO</p>
-                <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300">
                   Raghav has spent the past three years in London studying Influencer Marketing and Digital Media. 
                   His academic focus and on-the-ground involvement with global brands and student entrepreneurs 
                   give him a clear view of the challenges creators and companies face when trying to work together. 
@@ -117,7 +117,7 @@ export default function About() {
             </div>
 
             {/* Soham Chawla */}
-            <div className="bg-gray-800/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-700/50 hover:border-emerald-500/50 transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+            <div className="bg-white/80 dark:bg-gray-800/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 dark:border-gray-700/50 hover:border-gray-300 dark:hover:border-emerald-500/50 transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden animate-fade-in-up" style={{ animationDelay: '200ms' }}>
               {/* Animated background gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
@@ -127,7 +127,7 @@ export default function About() {
                 </div>
                 <h3 className="text-2xl font-bold text-emerald-400 mb-2 group-hover:text-emerald-300 transition-colors duration-300">Soham Chawla</h3>
                 <p className="text-emerald-300 mb-4 font-medium group-hover:text-emerald-200 transition-colors duration-300">Co-Founder & CTO</p>
-                <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300">
                   Currently studying at Birla Institute of Technology & Science (BITS) Pilani, Soham is the 
                   technical mind behind Convogue. He is building the platform&apos;s architecture and product roadmap 
                   to ensure a smooth, scalable, and intuitive user experience for both brands and influencers.
@@ -136,7 +136,7 @@ export default function About() {
             </div>
 
             {/* Priyam Varshney */}
-            <div className="bg-gray-800/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-700/50 hover:border-emerald-500/50 transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden md:col-span-2 lg:col-span-1 animate-fade-in-up" style={{ animationDelay: '400ms' }}>
+            <div className="bg-white/80 dark:bg-gray-800/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 dark:border-gray-700/50 hover:border-gray-300 dark:hover:border-emerald-500/50 transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden md:col-span-2 lg:col-span-1 animate-fade-in-up" style={{ animationDelay: '400ms' }}>
               {/* Animated background gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
@@ -146,7 +146,7 @@ export default function About() {
                 </div>
                 <h3 className="text-2xl font-bold text-emerald-400 mb-2 group-hover:text-emerald-300 transition-colors duration-300">Priyam Varshney</h3>
                 <p className="text-emerald-300 mb-4 font-medium group-hover:text-emerald-200 transition-colors duration-300">Senior Advisor</p>
-                <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300">
                   With over four years of hands-on experience in the influencer marketing industry and a current 
                   role at Lovely Professional University, Priyam brings invaluable insight into market trends, 
                   brand expectations, and creator needs. He advises on industry best practices, growth strategies, 
@@ -162,7 +162,7 @@ export default function About() {
       <section className="py-20 px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center relative">
           {/* Background effect for mission section */}
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-800/20 via-emerald-900/10 to-gray-800/20 rounded-3xl backdrop-blur-sm border border-gray-700/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-emerald-50/10 to-white/20 dark:from-gray-800/20 dark:via-emerald-900/10 dark:to-gray-800/20 rounded-3xl backdrop-blur-sm border border-gray-300 dark:border-gray-700/30"></div>
           
           <div className="relative z-10 p-12">
             <div className="w-20 h-20 bg-gradient-to-r from-emerald-400 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-8 hover:scale-110 hover:rotate-12 transition-all duration-300 animate-pulse-glow">
@@ -175,7 +175,7 @@ export default function About() {
               </span>
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto mb-8 rounded-full animate-pulse"></div>
-            <p className="text-xl text-gray-300 leading-relaxed animate-fade-in-delay-2">
+            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed animate-fade-in-delay-2">
               Together, we blend strategy, technology, and industry expertise to create a platform that 
               truly empowers brands and creators to connect, collaborate, and grow.
             </p>
