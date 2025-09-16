@@ -6,9 +6,7 @@ import {
   FaTwitter, 
   FaYoutube, 
   FaSnapchat, 
-  FaLinkedin, 
-  FaShopify, 
-  FaAmazon 
+  FaLinkedin 
 } from 'react-icons/fa';
 import { useRouter } from 'next/navigation';
 
@@ -36,9 +34,7 @@ const Hero = () => {
     { Icon: FaTwitter, className: 'top-12 right-16 md:top-16 md:right-32', delay: 2 },
     { Icon: FaYoutube, className: 'top-32 right-4 md:top-40 md:right-20', delay: 0.5 },
     { Icon: FaSnapchat, className: 'bottom-32 left-4 md:bottom-40 md:left-16', delay: 1.5 },
-    { Icon: FaLinkedin, className: 'bottom-24 right-16 md:bottom-32 md:right-40', delay: 2.5 },
-    { Icon: FaShopify, className: 'bottom-16 right-4 md:bottom-20 md:right-16', delay: 3 },
-    { Icon: FaAmazon, className: 'top-48 left-1/3 md:top-60 md:left-60', delay: 1.8 },
+    { Icon: FaLinkedin, className: 'bottom-24 right-16 md:bottom-32 md:right-40', delay: 2.5 }
   ];
 
   return (
