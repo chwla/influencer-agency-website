@@ -98,12 +98,13 @@ export default function About() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Raghav Goyal */}
             <div className="bg-white/80 dark:bg-gray-800/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 dark:border-gray-700/50 hover:border-gray-300 dark:hover:border-emerald-500/50 transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden animate-fade-in-up">
-              {/* Animated background gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-transparent to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-r from-emerald-400 to-blue-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                  <Users className="w-8 h-8 text-white" />
+                <div className="w-32 h-32 rounded-2xl mb-6 group-hover:scale-105 transition-all duration-300 overflow-hidden">
+                  <img
+                    src="/photos/about1.jpeg"
+                    alt="Raghav Goyal"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold text-emerald-400 mb-2 group-hover:text-emerald-300 transition-colors duration-300">Raghav Goyal</h3>
                 <p className="text-emerald-300 mb-4 font-medium group-hover:text-emerald-200 transition-colors duration-300">Co-Founder & CEO</p>
@@ -118,12 +119,13 @@ export default function About() {
 
             {/* Soham Chawla */}
             <div className="bg-white/80 dark:bg-gray-800/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 dark:border-gray-700/50 hover:border-gray-300 dark:hover:border-emerald-500/50 transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden animate-fade-in-up" style={{ animationDelay: '200ms' }}>
-              {/* Animated background gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                  <Code className="w-8 h-8 text-white" />
+                <div className="w-32 h-32 rounded-2xl mb-6 group-hover:scale-105 transition-all duration-300 overflow-hidden">
+                  <img
+                    src="/photos/about2.jpeg"
+                    alt="Soham Chawla"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold text-emerald-400 mb-2 group-hover:text-emerald-300 transition-colors duration-300">Soham Chawla</h3>
                 <p className="text-emerald-300 mb-4 font-medium group-hover:text-emerald-200 transition-colors duration-300">Co-Founder & CTO</p>
@@ -137,12 +139,13 @@ export default function About() {
 
             {/* Priyam Varshney */}
             <div className="bg-white/80 dark:bg-gray-800/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 dark:border-gray-700/50 hover:border-gray-300 dark:hover:border-emerald-500/50 transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden md:col-span-2 lg:col-span-1 animate-fade-in-up" style={{ animationDelay: '400ms' }}>
-              {/* Animated background gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                  <Lightbulb className="w-8 h-8 text-white" />
+                <div className="w-32 h-32 rounded-2xl mb-6 group-hover:scale-105 transition-all duration-300 overflow-hidden">
+                  <img
+                    src="/photos/about3.jpeg"
+                    alt="Priyam Varshney"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold text-emerald-400 mb-2 group-hover:text-emerald-300 transition-colors duration-300">Priyam Varshney</h3>
                 <p className="text-emerald-300 mb-4 font-medium group-hover:text-emerald-200 transition-colors duration-300">Senior Advisor</p>
