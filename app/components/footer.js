@@ -6,10 +6,7 @@ import {
   Phone, 
   MapPin, 
   Instagram, 
-  Twitter, 
   Linkedin, 
-  Youtube, 
-  Facebook,
   ArrowUp,
   Zap,
   Users,
@@ -31,11 +28,8 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { Icon: Instagram, href: '#', color: 'hover:text-pink-400', label: 'Instagram' },
-    { Icon: Youtube, href: '#', color: 'hover:text-red-400', label: 'YouTube' },
-    { Icon: Twitter, href: '#', color: 'hover:text-blue-400', label: 'Twitter' },
-    { Icon: Linkedin, href: '#', color: 'hover:text-blue-500', label: 'LinkedIn' },
-    { Icon: Facebook, href: '#', color: 'hover:text-blue-600', label: 'Facebook' }
+    { Icon: Instagram, href: 'https://www.instagram.com/convogue.in/?igsh=MWNmb3NrODVrdHh6dA%3D%3D&utm_source=qr', color: 'hover:text-pink-400', label: 'Instagram' },
+    { Icon: Linkedin, href: '#', color: 'hover:text-blue-500', label: 'LinkedIn' }
   ];
 
   const services = [
