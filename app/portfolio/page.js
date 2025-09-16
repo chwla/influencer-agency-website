@@ -17,51 +17,51 @@ export default function PortfolioPage() {
   const portfolioItems = [
     {
       id: 1,
-      image: 'photos/portfolio1.jpeg'
+      image: '/photos/portfolio1.jpeg'
     },
     {
       id: 2,
-      image: 'photos/portfolio2.jpeg'
+      image: '/photos/portfolio2.jpeg'
     },
     {
       id: 3,
-      image: 'photos/portfolio3.jpeg'
+      image: '/photos/portfolio3.jpeg'
     },
     {
       id: 4,
-      image: 'photos/portfolio4.jpeg'
+      image: '/photos/portfolio4.jpeg'
     },
     {
       id: 5,
-      image: 'photos/portfolio5.jpeg'
+      image: '/photos/portfolio5.jpeg'
     },
     {
       id: 6,
-      image: 'photos/portfolio6.jpeg'
+      image: '/photos/portfolio6.jpeg'
     },
     {
       id: 7,
-      image: 'photos/portfolio7.jpeg'
+      image: '/photos/portfolio7.jpeg'
     },
     {
       id: 8,
-      image: 'photos/portfolio8.jpeg'
+      image: '/photos/portfolio8.jpeg'
     },
     {
       id: 9,
-      image: 'photos/portfolio9.jpeg'
+      image: '/photos/portfolio9.jpeg'
     },
     {
       id: 10,
-      image: 'photos/portfolio10.jpeg'
+      image: '/photos/portfolio10.jpeg'
     },
     {
       id: 11,
-      image: 'photos/portfolio11.jpeg'
+      image: '/photos/portfolio11.jpeg'
     },
     {
       id: 12,
-      image: 'photos/portfolio12.jpeg'
+      image: '/photos/portfolio12.jpeg'
     }
   ];
 
@@ -90,7 +90,7 @@ export default function PortfolioPage() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-black text-gray-900 dark:text-white">
       {/* Header */}
-      <div className="pt-24 pb-12 px-6">
+      <div className="pt-28 pb-12 px-6">
         <div className="max-w-7xl mx-auto">
           <div className={`text-center space-y-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h1 className="text-5xl lg:text-7xl font-bold">

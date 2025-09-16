@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className="ml-10 flex items-baseline space-x-8">
               <Link 
                 href="/" 
-                className="text-gray-600 dark:text-white hover:text-emerald-400 px-3 py-2 text-base font-semibold transition-colors duration-200"
+                className="text-gray-600 dark:text-gray-300 hover:text-emerald-400 px-3 py-2 text-base font-semibold transition-colors duration-200"
               >
                 Home
               </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
               </Link>
               <Link 
                 href="/portfolio" 
-                className="text-gray-600 dark:text-white hover:text-emerald-400 px-3 py-2 text-base font-semibold transition-colors duration-200"
+                className="text-gray-600 dark:text-gray-300 hover:text-emerald-400 px-3 py-2 text-base font-semibold transition-colors duration-200"
               >
                 Portfolio
               </Link>
@@ -97,7 +97,7 @@ const Navbar = () => {
             <Link 
               href="/" 
               onClick={closeMenu}
-              className="text-gray-900 dark:text-white hover:text-emerald-400 block px-3 py-3 text-base font-semibold transition-colors duration-200 rounded-md hover:bg-emerald-500/10"
+              className="text-gray-600 dark:text-gray-300 hover:text-emerald-400 block px-3 py-3 text-base font-semibold transition-colors duration-200 rounded-md hover:bg-emerald-500/10"
             >
               Home
             </Link>
@@ -111,7 +111,7 @@ const Navbar = () => {
             <Link 
               href="/portfolio" 
               onClick={closeMenu}
-              className="text-gray-900 dark:text-white hover:text-emerald-400 block px-3 py-3 text-base font-semibold transition-colors duration-200 rounded-md hover:bg-emerald-500/10"
+              className="text-gray-600 dark:text-gray-300 hover:text-emerald-400 block px-3 py-3 text-base font-semibold transition-colors duration-200 rounded-md hover:bg-emerald-500/10"
             >
               Portfolio
             </Link>
