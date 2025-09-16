@@ -70,16 +70,16 @@ export default function ContactUs() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-950 relative overflow-hidden">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950 relative overflow-hidden">
       {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-950 to-black"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-gray-50 to-white dark:from-gray-900 dark:via-gray-950 dark:to-black"></div>
       
       {/* Floating Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {floatingIcons.map(({ Icon, className }, index) => (
           <div
             key={index}
-            className={`absolute w-12 h-12 rounded-full bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 flex items-center justify-center animate-pulse ${className}`}
+            className={`absolute w-12 h-12 rounded-full bg-white/30 dark:bg-gray-800/30 backdrop-blur-sm border border-gray-300 dark:border-gray-700/50 flex items-center justify-center animate-pulse ${className}`}
             style={{
               animationDelay: `${index * 0.5}s`,
               animationDuration: `${3 + index * 0.5}s`
@@ -98,18 +98,17 @@ export default function ContactUs() {
         <div className="max-w-4xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16 animate-fade-in-up">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-teal-200 to-teal-400 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-teal-600 to-teal-400 dark:from-white dark:via-teal-200 dark:to-teal-400 bg-clip-text text-transparent">
               Let&apos;s Create Something
               <span className="block text-teal-400">Amazing Together</span>
             </h1>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
               Ready to transform your brand presence in the creator economy? Share your vision with us and let&apos;s craft a campaign that resonates with your audience.
             </p>
           </div>
 
-
           {/* Contact Form */}
-          <div className="bg-gray-900/50 backdrop-blur-lg rounded-3xl border border-gray-800/50 p-8 md:p-12 shadow-2xl relative overflow-hidden">
+          <div className="bg-white/80 dark:bg-gray-900/50 backdrop-blur-lg rounded-3xl border border-gray-200 dark:border-gray-800/50 p-8 md:p-12 shadow-2xl relative overflow-hidden">
             {/* Animated Border Effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-teal-500/20 via-purple-500/20 to-pink-500/20 rounded-3xl animate-pulse opacity-30"></div>
             
@@ -121,15 +120,15 @@ export default function ContactUs() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <h2 className="text-3xl font-bold text-white mb-4">Thank You!</h2>
-                  <p className="text-gray-400 text-lg">We&apos;ve received your inquiry and will get back to you within 24 hours.</p>
+                  <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Thank You!</h2>
+                  <p className="text-gray-600 dark:text-gray-400 text-lg">We&apos;ve received your inquiry and will get back to you within 24 hours.</p>
                 </div>
               ) : (
                 <div ref={formRef} className="space-y-8">
                   {/* Company Information */}
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="group">
-                      <label className="block text-sm font-medium text-gray-300 mb-3 flex items-center">
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 flex items-center">
                         <Building2 size={16} className="mr-2 text-teal-400" />
                         Company Name *
                       </label>
@@ -138,7 +137,7 @@ export default function ContactUs() {
                         name="companyName"
                         value={formData.companyName}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-4 bg-gray-800/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-white placeholder-gray-400 transition-all duration-300 group-hover:border-gray-600"
+                        className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600"
                         placeholder="Your Company Name"
                         required
                       />
@@ -151,7 +150,7 @@ export default function ContactUs() {
                     </div>
                     
                     <div className="group">
-                      <label className="block text-sm font-medium text-gray-300 mb-3 flex items-center">
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 flex items-center">
                         <User size={16} className="mr-2 text-teal-400" />
                         Contact Person *
                       </label>
@@ -160,7 +159,7 @@ export default function ContactUs() {
                         name="contactPerson"
                         value={formData.contactPerson}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-4 bg-gray-800/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-white placeholder-gray-400 transition-all duration-300 group-hover:border-gray-600"
+                        className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600"
                         placeholder="Your Full Name"
                         required
                       />
@@ -176,7 +175,7 @@ export default function ContactUs() {
                   {/* Contact Details */}
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="group">
-                      <label className="block text-sm font-medium text-gray-300 mb-3 flex items-center">
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 flex items-center">
                         <Mail size={16} className="mr-2 text-teal-400" />
                         Email Address *
                       </label>
@@ -185,7 +184,7 @@ export default function ContactUs() {
                         name="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-4 bg-gray-800/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-white placeholder-gray-400 transition-all duration-300 group-hover:border-gray-600"
+                        className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600"
                         placeholder="your@email.com"
                         required
                       />
@@ -198,7 +197,7 @@ export default function ContactUs() {
                     </div>
                     
                     <div className="group">
-                      <label className="block text-sm font-medium text-gray-300 mb-3 flex items-center">
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 flex items-center">
                         <Phone size={16} className="mr-2 text-teal-400" />
                         Phone Number
                       </label>
@@ -207,7 +206,7 @@ export default function ContactUs() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-4 bg-gray-800/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-white placeholder-gray-400 transition-all duration-300 group-hover:border-gray-600"
+                        className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600"
                         placeholder="+91 XXXXX XXXXX"
                       />
                       <ValidationError 
@@ -222,7 +221,7 @@ export default function ContactUs() {
                   {/* Website and Industry */}
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="group">
-                      <label className="block text-sm font-medium text-gray-300 mb-3 flex items-center">
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 flex items-center">
                         <Globe size={16} className="mr-2 text-teal-400" />
                         Website URL
                       </label>
@@ -231,7 +230,7 @@ export default function ContactUs() {
                         name="website"
                         value={formData.website}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-4 bg-gray-800/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-white placeholder-gray-400 transition-all duration-300 group-hover:border-gray-600"
+                        className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600"
                         placeholder="https://yourwebsite.com"
                       />
                       <ValidationError 
@@ -243,12 +242,12 @@ export default function ContactUs() {
                     </div>
                     
                     <div className="group">
-                      <label className="block text-sm font-medium text-gray-300 mb-3">Industry *</label>
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Industry *</label>
                       <select
                         name="industry"
                         value={formData.industry}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-4 bg-gray-800/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-white transition-all duration-300 group-hover:border-gray-600"
+                        className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600"
                         required
                       >
                         <option value="">Select Industry</option>
@@ -275,12 +274,12 @@ export default function ContactUs() {
                   {/* Campaign Details */}
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="group">
-                      <label className="block text-sm font-medium text-gray-300 mb-3">Campaign Budget (INR)</label>
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Campaign Budget (INR)</label>
                       <select
                         name="budget"
                         value={formData.budget}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-4 bg-gray-800/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-white transition-all duration-300 group-hover:border-gray-600"
+                        className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600"
                       >
                         <option value="">Select Budget Range</option>
                         <option value="50k-1L">₹50,000 - ₹1,00,000</option>
@@ -298,12 +297,12 @@ export default function ContactUs() {
                     </div>
                     
                     <div className="group">
-                      <label className="block text-sm font-medium text-gray-300 mb-3">Timeline</label>
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Timeline</label>
                       <select
                         name="timeline"
                         value={formData.timeline}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-4 bg-gray-800/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-white transition-all duration-300 group-hover:border-gray-600"
+                        className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600"
                       >
                         <option value="">Select Timeline</option>
                         <option value="asap">ASAP (Within 2 weeks)</option>
@@ -322,13 +321,13 @@ export default function ContactUs() {
 
                   {/* Campaign Goals */}
                   <div className="group">
-                    <label className="block text-sm font-medium text-gray-300 mb-3">Campaign Goals</label>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Campaign Goals</label>
                     <textarea
                       name="campaignGoals"
                       value={formData.campaignGoals}
                       onChange={handleInputChange}
                       rows={3}
-                      className="w-full px-4 py-4 bg-gray-800/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-white placeholder-gray-400 transition-all duration-300 group-hover:border-gray-600 resize-none"
+                      className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600 resize-none"
                       placeholder="What are your main objectives? (Brand awareness, lead generation, sales, etc.)"
                     ></textarea>
                     <ValidationError 
@@ -341,7 +340,7 @@ export default function ContactUs() {
 
                   {/* Additional Message */}
                   <div className="group">
-                    <label className="block text-sm font-medium text-gray-300 mb-3 flex items-center">
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 flex items-center">
                       <MessageSquare size={16} className="mr-2 text-teal-400" />
                       Additional Details
                     </label>
@@ -350,7 +349,7 @@ export default function ContactUs() {
                       value={formData.message}
                       onChange={handleInputChange}
                       rows={4}
-                      className="w-full px-4 py-4 bg-gray-800/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-white placeholder-gray-400 transition-all duration-300 group-hover:border-gray-600 resize-none"
+                      className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600 resize-none"
                       placeholder="Tell us more about your brand, target audience, preferred platforms, or any specific requirements..."
                     ></textarea>
                     <ValidationError 
@@ -389,28 +388,28 @@ export default function ContactUs() {
 
           {/* Additional Info */}
           <div className="grid md:grid-cols-3 gap-6 mt-16">
-            <div className="text-center p-6 bg-gray-900/30 rounded-2xl border border-gray-800/50 backdrop-blur-sm hover:bg-gray-900/50 transition-all duration-300 group">
+            <div className="text-center p-6 bg-white/60 dark:bg-gray-900/30 rounded-2xl border border-gray-200 dark:border-gray-800/50 backdrop-blur-sm hover:bg-white/80 dark:hover:bg-gray-900/50 transition-all duration-300 group">
               <div className="w-16 h-16 bg-gradient-to-r from-teal-500 to-green-500 rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <Zap className="text-white" size={32} />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-2">Quick Response</h3>
-              <p className="text-gray-400">Get a detailed proposal within 24 hours of your inquiry.</p>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Quick Response</h3>
+              <p className="text-gray-600 dark:text-gray-400">Get a detailed proposal within 24 hours of your inquiry.</p>
             </div>
             
-            <div className="text-center p-6 bg-gray-900/30 rounded-2xl border border-gray-800/50 backdrop-blur-sm hover:bg-gray-900/50 transition-all duration-300 group">
+            <div className="text-center p-6 bg-white/60 dark:bg-gray-900/30 rounded-2xl border border-gray-200 dark:border-gray-800/50 backdrop-blur-sm hover:bg-white/80 dark:hover:bg-gray-900/50 transition-all duration-300 group">
               <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <Target className="text-white" size={32} />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-2">Tailored Strategy</h3>
-              <p className="text-gray-400">Custom campaigns designed specifically for your brand goals.</p>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Tailored Strategy</h3>
+              <p className="text-gray-600 dark:text-gray-400">Custom campaigns designed specifically for your brand goals.</p>
             </div>
             
-            <div className="text-center p-6 bg-gray-900/30 rounded-2xl border border-gray-800/50 backdrop-blur-sm hover:bg-gray-900/50 transition-all duration-300 group">
+            <div className="text-center p-6 bg-white/60 dark:bg-gray-900/30 rounded-2xl border border-gray-200 dark:border-gray-800/50 backdrop-blur-sm hover:bg-white/80 dark:hover:bg-gray-900/50 transition-all duration-300 group">
               <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <TrendingUp className="text-white" size={32} />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-2">Proven Results</h3>
-              <p className="text-gray-400">Track record of successful campaigns with measurable ROI.</p>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Proven Results</h3>
+              <p className="text-gray-600 dark:text-gray-400">Track record of successful campaigns with measurable ROI.</p>
             </div>
           </div>
         </div>
