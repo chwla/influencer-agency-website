@@ -12,7 +12,7 @@ const ConvogueSections = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden relative">
+    <div className="min-h-screen bg-gray-50 dark:bg-black text-gray-900 dark:text-white overflow-hidden relative">
       {/* Section 1: Why Convogue */}
       <div className="min-h-screen flex items-center justify-center px-6 py-20 relative">
         {/* Floating social icons matching your design */}
@@ -45,25 +45,25 @@ const ConvogueSections = () => {
                 <span className="animate-bounce inline-block ml-2">?</span>
               </h1>
               
-              <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-delay-1">
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-delay-1">
                 We&apos;re not just an agency – we&apos;re the bridge between brands and 
                 the creator economy. At our core, we connect brands with the right creators and conversations. We specialize in organizing influencer-led events, managing brand campaigns, and executing strategic digital marketing across platforms like Instagram, YouTube, and Twitter.
               </p>
               
-              <p className="text-lg text-gray-400 leading-relaxed animate-fade-in-delay-2">
+              <p className="text-lg text-gray-500 dark:text-gray-400 leading-relaxed animate-fade-in-delay-2">
                 From influencer marketing and meme marketing to Twitter trends and offline creator meets, we create campaigns that spark attention and drive real impact. Every campaign is designed to boost brand awareness, engagement, and ultimately consumer trust.
               </p>
             </div>
             
             {/* Stats */}
             <div className="grid grid-cols-2 gap-6 pt-8">
-              <div className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/30 hover:border-emerald-500/50 transition-all duration-500 hover-grow group animate-pulse-glow">
+              <div className="bg-white/80 dark:bg-gray-800/30 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 dark:border-gray-700/30 hover:border-emerald-500/50 transition-all duration-500 hover-grow group animate-pulse-glow">
                 <div className="text-4xl font-bold text-emerald-400 mb-2 group-hover:animate-pulse">500+</div>
-                <div className="text-gray-400 group-hover:text-white transition-colors duration-300">Active Creators</div>
+                <div className="text-gray-500 dark:text-gray-400 group-hover:text-gray-700 dark:group-hover:text-white transition-colors duration-300">Active Creators</div>
               </div>
-              <div className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/30 hover:border-cyan-500/50 transition-all duration-500 hover-grow group animate-pulse-glow">
+              <div className="bg-white/80 dark:bg-gray-800/30 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 dark:border-gray-700/30 hover:border-cyan-500/50 transition-all duration-500 hover-grow group animate-pulse-glow">
                 <div className="text-4xl font-bold text-cyan-400 mb-2 group-hover:animate-pulse">98%</div>
-                <div className="text-gray-400 group-hover:text-white transition-colors duration-300">Client Retention</div>
+                <div className="text-gray-500 dark:text-gray-400 group-hover:text-gray-700 dark:group-hover:text-white transition-colors duration-300">Client Retention</div>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@ const ConvogueSections = () => {
             ].map((item, index) => (
               <div 
                 key={index}
-                className="bg-gray-800/20 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/30 hover:border-gray-500/50 transition-all duration-500 hover-grow group cursor-pointer"
+                className="bg-white/80 dark:bg-gray-800/20 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 dark:border-gray-700/30 hover:border-gray-300 dark:hover:border-gray-500/50 transition-all duration-500 hover-grow group cursor-pointer"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 <div className="flex items-start space-x-4">
@@ -109,7 +109,7 @@ const ConvogueSections = () => {
                     <h3 className="text-xl font-semibold text-emerald-400 mb-2 group-hover:text-emerald-300 transition-colors duration-300">
                       {item.title}
                     </h3>
-                    <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                    <p className="text-gray-500 dark:text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300">
                       {item.desc}
                     </p>
                   </div>
@@ -143,7 +143,7 @@ const ConvogueSections = () => {
                 Services
               </span>
             </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-500 dark:text-gray-400 max-w-3xl mx-auto">
               Comprehensive solutions that transform your brand presence in the creator economy
             </p>
           </div>
@@ -186,7 +186,7 @@ const ConvogueSections = () => {
             ].map((service, index) => (
               <div
                 key={index}
-                className={`bg-gray-800/20 backdrop-blur-sm rounded-3xl p-8 border border-gray-700/30 ${service.hoverColor} transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden`}
+                className={`bg-white/80 dark:bg-gray-800/20 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 dark:border-gray-700/30 ${service.hoverColor} transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden`}
                 onMouseEnter={() => setActiveCard(index)}
                 onMouseLeave={() => setActiveCard(null)}
                 style={{ animationDelay: `${index * 300}ms` }}
@@ -203,7 +203,7 @@ const ConvogueSections = () => {
                     {service.title}
                   </h3>
                   
-                  <p className="text-gray-400 mb-6 group-hover:text-gray-300 transition-colors duration-300 leading-relaxed">
+                  <p className="text-gray-500 dark:text-gray-400 mb-6 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 leading-relaxed">
                     {service.desc}
                   </p>
                   
@@ -211,7 +211,7 @@ const ConvogueSections = () => {
                     {service.features.map((feature, featureIndex) => (
                       <li
                         key={featureIndex}
-                        className={`flex items-center text-gray-500 group-hover:text-gray-300 transition-all duration-300 ${activeCard === index ? 'translate-x-2' : ''}`}
+                        className={`flex items-center text-gray-400 dark:text-gray-500 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-all duration-300 ${activeCard === index ? 'translate-x-2' : ''}`}
                         style={{ transitionDelay: `${featureIndex * 100}ms` }}
                       >
                         <div className="w-2 h-2 bg-emerald-400 rounded-full mr-3 animate-pulse"></div>
@@ -252,7 +252,7 @@ const ConvogueSections = () => {
                 Work
               </span>
             </h2>
-            <p className="text-xl text-gray-400 max-w-4xl mx-auto">
+            <p className="text-xl text-gray-500 dark:text-gray-400 max-w-4xl mx-auto">
               A transparent, proven process that transforms your brand presence in the creator economy
             </p>
           </div>
@@ -299,16 +299,16 @@ const ConvogueSections = () => {
             ].map((process, index) => (
               <div
                 key={index}
-                className="bg-gray-800/25 backdrop-blur-sm rounded-3xl p-8 border border-gray-700/30 hover:border-gray-500/50 transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden"
+                className="bg-white/80 dark:bg-gray-800/25 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 dark:border-gray-700/30 hover:border-gray-300 dark:hover:border-gray-500/50 transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden"
                 style={{ animationDelay: `${index * 400}ms` }}
               >
                 {/* Animated background gradient */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${process.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-100/50 dark:from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div className="relative z-10">
                   {/* Step number */}
-                  <div className="text-6xl font-bold text-gray-800 mb-4 group-hover:text-gray-700 transition-colors duration-300">
+                  <div className="text-6xl font-bold text-gray-200 dark:text-gray-800 mb-4 group-hover:text-gray-300 dark:group-hover:text-gray-700 transition-colors duration-300">
                     {process.step}
                   </div>
                   
@@ -316,11 +316,11 @@ const ConvogueSections = () => {
                     <process.icon className="w-8 h-8 text-white" />
                   </div>
                   
-                  <h3 className="text-2xl font-bold text-emerald-400 mb-4 group-hover:text-white transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-emerald-400 mb-4 group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
                     {process.title}
                   </h3>
                   
-                  <p className="text-gray-400 mb-6 group-hover:text-gray-200 transition-colors duration-300 leading-relaxed">
+                  <p className="text-gray-500 dark:text-gray-400 mb-6 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300 leading-relaxed">
                     {process.desc}
                   </p>
                   
@@ -328,7 +328,7 @@ const ConvogueSections = () => {
                     {process.features.map((feature, featureIndex) => (
                       <li
                         key={featureIndex}
-                        className="flex items-center text-gray-500 group-hover:text-gray-300 transition-colors duration-300"
+                        className="flex items-center text-gray-400 dark:text-gray-500 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300"
                       >
                         <div className="w-2 h-2 bg-emerald-400 rounded-full mr-3 animate-pulse"></div>
                         {feature}
@@ -338,7 +338,7 @@ const ConvogueSections = () => {
                   
                   {/* Arrow connector (hidden on last item) */}
                   {index < 3 && (
-                    <div className="hidden lg:block absolute -right-4 top-1/2 transform -translate-y-1/2 text-gray-600 group-hover:text-emerald-400 transition-colors duration-300">
+                    <div className="hidden lg:block absolute -right-4 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-600 group-hover:text-emerald-400 transition-colors duration-300">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
