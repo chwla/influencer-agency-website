@@ -2,7 +2,7 @@
 
 import { useState, useRef } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import { Send, User, Mail, Building2, MessageSquare, Phone, Globe, Target, TrendingUp, Users, Zap } from 'lucide-react';
+import { Send, User, Mail, Building2, Phone, Globe, Target, TrendingUp, Users, Zap } from 'lucide-react';
 
 export default function ContactUs() {
   const [state, handleSubmit] = useForm("xeolnpqq");
@@ -11,12 +11,7 @@ export default function ContactUs() {
     contactPerson: '',
     email: '',
     phone: '',
-    website: '',
-    industry: '',
-    campaignGoals: '',
-    budget: '',
-    timeline: '',
-    message: ''
+    website: ''
   });
   const formRef = useRef(null);
 
@@ -49,12 +44,7 @@ export default function ContactUs() {
           contactPerson: '',
           email: '',
           phone: '',
-          website: '',
-          industry: '',
-          campaignGoals: '',
-          budget: '',
-          timeline: '',
-          message: ''
+          website: ''
         });
       }, 3000);
     }
@@ -65,8 +55,7 @@ export default function ContactUs() {
     { Icon: TrendingUp, className: "top-32 right-20 text-purple-400" },
     { Icon: Users, className: "top-64 left-8 text-blue-400" },
     { Icon: Zap, className: "top-96 right-16 text-pink-400" },
-    { Icon: Globe, className: "bottom-32 left-20 text-green-400" },
-    { Icon: MessageSquare, className: "bottom-48 right-12 text-orange-400" }
+    { Icon: Globe, className: "bottom-32 left-20 text-green-400" }
   ];
 
   return (
@@ -218,143 +207,23 @@ export default function ContactUs() {
                     </div>
                   </div>
 
-                  {/* Website and Industry */}
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="group">
-                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 flex items-center">
-                        <Globe size={16} className="mr-2 text-teal-400" />
-                        Website URL
-                      </label>
-                      <input
-                        type="url"
-                        name="website"
-                        value={formData.website}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600"
-                        placeholder="https://yourwebsite.com"
-                      />
-                      <ValidationError 
-                        prefix="Website" 
-                        field="website"
-                        errors={state.errors}
-                        className="text-red-400 text-sm mt-1"
-                      />
-                    </div>
-                    
-                    <div className="group">
-                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Industry *</label>
-                      <select
-                        name="industry"
-                        value={formData.industry}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600"
-                        required
-                      >
-                        <option value="">Select Industry</option>
-                        <option value="technology">Technology</option>
-                        <option value="fashion">Fashion &amp; Lifestyle</option>
-                        <option value="beauty">Beauty &amp; Cosmetics</option>
-                        <option value="food">Food &amp; Beverage</option>
-                        <option value="fitness">Health &amp; Fitness</option>
-                        <option value="travel">Travel &amp; Tourism</option>
-                        <option value="finance">Finance &amp; Banking</option>
-                        <option value="education">Education</option>
-                        <option value="gaming">Gaming &amp; Entertainment</option>
-                        <option value="other">Other</option>
-                      </select>
-                      <ValidationError 
-                        prefix="Industry" 
-                        field="industry"
-                        errors={state.errors}
-                        className="text-red-400 text-sm mt-1"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Campaign Details */}
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="group">
-                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Campaign Budget (INR)</label>
-                      <select
-                        name="budget"
-                        value={formData.budget}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600"
-                      >
-                        <option value="">Select Budget Range</option>
-                        <option value="50k-1L">₹50,000 - ₹1,00,000</option>
-                        <option value="1L-5L">₹1,00,000 - ₹5,00,000</option>
-                        <option value="5L-10L">₹5,00,000 - ₹10,00,000</option>
-                        <option value="10L-25L">₹10,00,000 - ₹25,00,000</option>
-                        <option value="25L+">₹25,00,000+</option>
-                      </select>
-                      <ValidationError 
-                        prefix="Budget" 
-                        field="budget"
-                        errors={state.errors}
-                        className="text-red-400 text-sm mt-1"
-                      />
-                    </div>
-                    
-                    <div className="group">
-                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Timeline</label>
-                      <select
-                        name="timeline"
-                        value={formData.timeline}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600"
-                      >
-                        <option value="">Select Timeline</option>
-                        <option value="asap">ASAP (Within 2 weeks)</option>
-                        <option value="1month">Within 1 month</option>
-                        <option value="2-3months">2-3 months</option>
-                        <option value="flexible">Flexible</option>
-                      </select>
-                      <ValidationError 
-                        prefix="Timeline" 
-                        field="timeline"
-                        errors={state.errors}
-                        className="text-red-400 text-sm mt-1"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Campaign Goals */}
-                  <div className="group">
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Campaign Goals</label>
-                    <textarea
-                      name="campaignGoals"
-                      value={formData.campaignGoals}
-                      onChange={handleInputChange}
-                      rows={3}
-                      className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600 resize-none"
-                      placeholder="What are your main objectives? (Brand awareness, lead generation, sales, etc.)"
-                    ></textarea>
-                    <ValidationError 
-                      prefix="Campaign Goals" 
-                      field="campaignGoals"
-                      errors={state.errors}
-                      className="text-red-400 text-sm mt-1"
-                    />
-                  </div>
-
-                  {/* Additional Message */}
+                  {/* Website */}
                   <div className="group">
                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 flex items-center">
-                      <MessageSquare size={16} className="mr-2 text-teal-400" />
-                      Additional Details
+                      <Globe size={16} className="mr-2 text-teal-400" />
+                      Website URL
                     </label>
-                    <textarea
-                      name="message"
-                      value={formData.message}
+                    <input
+                      type="url"
+                      name="website"
+                      value={formData.website}
                       onChange={handleInputChange}
-                      rows={4}
-                      className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600 resize-none"
-                      placeholder="Tell us more about your brand, target audience, preferred platforms, or any specific requirements..."
-                    ></textarea>
+                      className="w-full px-4 py-4 bg-gray-50 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 group-hover:border-gray-400 dark:group-hover:border-gray-600"
+                      placeholder="https://yourwebsite.com"
+                    />
                     <ValidationError 
-                      prefix="Message" 
-                      field="message"
+                      prefix="Website" 
+                      field="website"
                       errors={state.errors}
                       className="text-red-400 text-sm mt-1"
                     />
