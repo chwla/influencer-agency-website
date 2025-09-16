@@ -38,7 +38,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 overflow-hidden pt-16 md:pt-20 lg:pt-24">
+    <section className="relative bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-black dark:to-gray-800 overflow-hidden pt-16 md:pt-20 lg:pt-24">
       {/* CSS Animation Styles */}
       <style dangerouslySetInnerHTML={{
         __html: `
@@ -85,14 +85,14 @@ const Hero = () => {
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Heading */}
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight">
-            <span className="text-white">Connecting Brands with </span>
+            <span className="text-gray-900 dark:text-white">Connecting Brands with </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">
               Influencers in India
             </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed px-2">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 dark:text-gray-300 mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed px-2">
             We help Indian brands grow through authentic influencer partnerships on Instagram, YouTube, Facebook, and regional social media platforms. Enhance your digital presence and reach the right audience with our tailored marketing strategies.
           </p>
 
@@ -109,7 +109,7 @@ const Hero = () => {
       </div>
 
       {/* Bottom Gradient */}
-      <div className="absolute bottom-0 left-0 right-0 h-20 md:h-32 bg-gradient-to-t from-black to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-20 md:h-32 bg-gradient-to-t from-white to-transparent dark:from-black dark:to-transparent" />
     </section>
   );
 };
