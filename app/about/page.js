@@ -107,7 +107,7 @@ export default function About() {
                   />
                 </div>
                 <h3 className="text-2xl font-bold text-emerald-400 mb-2 group-hover:text-emerald-300 transition-colors duration-300">Raghav Goyal</h3>
-                <p className="text-emerald-300 mb-4 font-medium group-hover:text-emerald-200 transition-colors duration-300">Co-Founder & CEO</p>
+                <p className="text-emerald-300 mb-4 font-medium group-hover:text-emerald-200 transition-colors duration-300">Campaign Manager</p>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300">
                   Raghav has spent the past three years in London studying Influencer Marketing and Digital Media. 
                   His academic focus and on-the-ground involvement with global brands and student entrepreneurs 
@@ -128,7 +128,7 @@ export default function About() {
                   />
                 </div>
                 <h3 className="text-2xl font-bold text-emerald-400 mb-2 group-hover:text-emerald-300 transition-colors duration-300">Soham Chawla</h3>
-                <p className="text-emerald-300 mb-4 font-medium group-hover:text-emerald-200 transition-colors duration-300">Co-Founder & CTO</p>
+                <p className="text-emerald-300 mb-4 font-medium group-hover:text-emerald-200 transition-colors duration-300">Founder</p>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300">
                   Currently studying at Birla Institute of Technology & Science (BITS) Pilani, Soham is the 
                   technical mind behind Convogue. He is building the platform&apos;s architecture and product roadmap 
