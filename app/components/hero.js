@@ -87,7 +87,7 @@ const Hero = () => {
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight">
             <span className="text-gray-900 dark:text-white">Connecting Brands with </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">
-              Influencers in India
+              Influencers
             </span>
           </h1>
 
