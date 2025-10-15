@@ -43,6 +43,7 @@ export default function Footer() {
     { text: 'Home', href: '/' },
     { text: 'Contact Us', href: '/contact' },
     { text: 'Portfolio', href: '/portfolio' },
+    { text: 'Ethics & Values', href: '/ethics' },
     { text: 'About Us', href: '/about' }
   ];
 
