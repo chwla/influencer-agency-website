@@ -93,7 +93,7 @@ const Hero = () => {
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 dark:text-gray-300 mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed px-2">
-            We help Indian brands grow through authentic influencer partnerships on Instagram, YouTube, Facebook, and regional social media platforms. Enhance your digital presence and reach the right audience with our tailored marketing strategies.
+            We help brands grow through authentic influencer partnerships on Instagram, YouTube, Facebook, and regional social media platforms. Enhance your digital presence and reach the right audience with our tailored marketing strategies.
           </p>
 
           {/* Single Centered CTA Button */}
