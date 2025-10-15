@@ -95,7 +95,7 @@ export default function About() {
             <div className="w-16 h-1 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto rounded-full animate-pulse"></div>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Raghav Goyal */}
             <div className="bg-white/80 dark:bg-gray-800/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 dark:border-gray-700/50 hover:border-gray-300 dark:hover:border-emerald-500/50 transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden animate-fade-in-up">
               <div className="relative z-10">
@@ -117,28 +117,8 @@ export default function About() {
               </div>
             </div>
 
-            {/* Soham Chawla */}
-            <div className="bg-white/80 dark:bg-gray-800/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 dark:border-gray-700/50 hover:border-gray-300 dark:hover:border-emerald-500/50 transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden animate-fade-in-up" style={{ animationDelay: '200ms' }}>
-              <div className="relative z-10">
-                <div className="w-32 h-32 rounded-2xl mb-6 group-hover:scale-105 transition-all duration-300 overflow-hidden">
-                  <img
-                    src="/photos/about2.jpeg"
-                    alt="Soham Chawla"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-2xl font-bold text-emerald-400 mb-2 group-hover:text-emerald-300 transition-colors duration-300">Soham Chawla</h3>
-                <p className="text-emerald-300 mb-4 font-medium group-hover:text-emerald-200 transition-colors duration-300">Founder</p>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300">
-                  Currently studying at Birla Institute of Technology & Science (BITS) Pilani, Soham is the 
-                  technical mind behind Convogue. He is building the platform&apos;s architecture and product roadmap 
-                  to ensure a smooth, scalable, and intuitive user experience for both brands and influencers.
-                </p>
-              </div>
-            </div>
-
             {/* Priyam Varshney */}
-            <div className="bg-white/80 dark:bg-gray-800/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 dark:border-gray-700/50 hover:border-gray-300 dark:hover:border-emerald-500/50 transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden md:col-span-2 lg:col-span-1 animate-fade-in-up" style={{ animationDelay: '400ms' }}>
+            <div className="bg-white/80 dark:bg-gray-800/30 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 dark:border-gray-700/50 hover:border-gray-300 dark:hover:border-emerald-500/50 transition-all duration-500 hover-grow group cursor-pointer relative overflow-hidden animate-fade-in-up" style={{ animationDelay: '200ms' }}>
               <div className="relative z-10">
                 <div className="w-32 h-32 rounded-2xl mb-6 group-hover:scale-105 transition-all duration-300 overflow-hidden">
                   <img
