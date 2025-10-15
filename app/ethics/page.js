@@ -29,9 +29,9 @@ export default function EthicsValues() {
       title: 'Tobacco & Vaping',
       desc: 'Brands that promote or sell tobacco, cigarettes, vaping products, or related paraphernalia.'
     },
-    {
+                {
       title: 'Irresponsible Alcohol',
-      desc: 'Brands that promote hard alcohol where promotion would be irresponsible for the creator\'s audience or in violation of local advertising laws.'
+      desc: 'Brands that promote hard alcohol where promotion would be irresponsible for the creator&apos;s audience or in violation of local advertising laws.'
     },
     {
       title: 'Animal Cruelty',
@@ -165,7 +165,7 @@ export default function EthicsValues() {
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed animate-fade-in-delay-2">
               We build long-term trust between creators, communities, and brands. Working with partners who 
               compromise safety, legality, or human dignity undermines that trust and the effectiveness of campaigns. 
-              Our guidelines protect creators' reputations and the brands that work with them — and ensure audiences 
+              Our guidelines protect creators&apos; reputations and the brands that work with them — and ensure audiences 
               are treated with respect.
             </p>
           </div>
